@@ -45,7 +45,7 @@
 (define (choose-branch bit branch)
   (cond ((= bit 0) (left-branch branch))
         ((= bit 1) (right-branch branch))
-        (else (error "bad bit - CHOOSE-BRANCH" bit))))
+        (else (error "bad bit - choose-branch" bit))))
 
 (define (adjoin-set x set)
   (cond ((null? set) (list x))
