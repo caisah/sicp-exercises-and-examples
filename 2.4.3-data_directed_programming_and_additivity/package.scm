@@ -1,3 +1,16 @@
+(define (attach-tag type-tag contents)
+  (cons type-tag contents))
+
+(define (type-tag datum)
+  (if (pair? datum)
+      (car datum)
+      (error "Bad tagged datum - TYPE-TAG" datum)))
+
+(define (contents datum)
+  (if (pair? datum)
+      (cdr datum)
+      (error "Bad tagged datum - CONTENTS" datum)))
+
 (define (install-rectangular-package)
   ;; internal procedures
   (define (real-part z) (car z))
@@ -65,4 +78,4 @@
   ((get 'make-from-real-imag 'rectangular) x y))
 
 (define (make-from-mag-ang r a)
-  ((get 'make-from-real-imag 'rectangular) x y))
+  ((get 'make-from-real-imag 'polar) x y))
