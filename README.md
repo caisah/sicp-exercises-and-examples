@@ -1,4 +1,4 @@
-SICP-exercises-and-examples
+SICP - Exercises & Examples
 ===========================
 
 My takes on the infamous **Structure and Interpretation of Computer Programs (2nd edition)** book by **Sussman&amp;Abelson**.
