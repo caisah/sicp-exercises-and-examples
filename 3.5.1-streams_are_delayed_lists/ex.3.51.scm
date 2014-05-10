@@ -9,12 +9,10 @@
              show
              (stream-enumerate-interval 0 10)))
 
-  
-;; This should be printed (but this implementation doesn't):
 ;; x
 ;; 0
 
-(stream-ref x 5) 
+(stream-ref x 5)
 ;; 1
 ;; 2
 ;; 3

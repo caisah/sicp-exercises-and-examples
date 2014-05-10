@@ -12,3 +12,4 @@
 (define s1 (cons-stream 1 (cons-stream 2 the-empty-stream)))
 (define s2 (cons-stream 2 (cons-stream 4 the-empty-stream)))
 (display-stream (stream-map + s1 s2))
+
